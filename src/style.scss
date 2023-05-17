@@ -8,11 +8,17 @@
   @media screen and (max-width: 599px) {
     height: 60svh;
   }
-  & figure {
-    position: absolute;
-    opacity: 0;
-    width: 23.75vw;
-    height: auto;
+}
+.uncommon-about-header figure {
+  position: absolute;
+  opacity: 0;
+  width: 23.75vw;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  .content-loaded & {
+    opacity: 1;
   }
 }
 .uncommon-about-header-title {
