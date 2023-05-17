@@ -1,0 +1,28 @@
+.uncommon-about-header {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: var(--wp--preset--color--gallery-off-white);
+
+  & .block-editor-block-list__layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & figure {
+    opacity: 1;
+    flex: 0 0 25%;
+    margin: 0;
+  }
+  & .uncommon-about-header-title-input {
+    flex: 0 0 100%;
+
+    & .components-text-control__input {
+      font-size: var(--wp--preset--font-size--h-2);
+      background: transparent;
+      border: 1px dashed var(--wp--preset--color--pigment-purple);
+      font-family: var(--wp--preset--font-family--residenz-grotesk);
+      color: var(--wp--preset--color--contrast);
+    }
+  }
+}

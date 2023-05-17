@@ -1,0 +1,42 @@
+.uncommon-about-header {
+  position: relative;
+  height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--wp--preset--color--gallery-off-white);
+
+  @media screen and (max-width: 599px) {
+    height: 60svh;
+  }
+  & figure {
+    position: absolute;
+    opacity: 0;
+    width: 23.75vw;
+    height: auto;
+  }
+}
+.uncommon-about-header-title {
+  font-size: var(--wp--preset--font-size--h-2);
+  position: absolute;
+  left: var(--wp--preset--spacing--outer);
+  bottom: var(--wp--preset--spacing--outer);
+  margin: 0;
+  max-width: 12em;
+  z-index: 1000;
+  transform: translateY(25%);
+  opacity: 0;
+
+  .dom-loaded & {
+    animation: title-in 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  }
+}
+@keyframes title-in {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
