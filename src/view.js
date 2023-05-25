@@ -7,7 +7,7 @@
             imageWidth = images[0].getBoundingClientRect().width,
             windowWidth = window.innerWidth,
             windowHeight = window.innerHeight,
-            fullAnimationLoopDuration = 5,
+            fullAnimationLoopDuration = 10,
             animdelay = fullAnimationLoopDuration / images.length;
       
       images.forEach( (image, index) => {
@@ -19,10 +19,10 @@
         image.style.opacity = 1;
         motion.animate( image, 
           { 
-            x: [ `${windowWidth}px`, `-${imageWidth}px` ], 
-            y: [ `${windowHeight * 0.2}px`, `${windowHeight * 0.3}px`, `${windowHeight * 0.2}px`, `-${0.5 * imageWidth}px` ],
+            x: [ `${windowWidth}px`, `-${imageWidth * 1.5}px` ], 
+            y: [ `${windowHeight * 0.3}px`, `${windowHeight * 0.4}px`, `${windowHeight * 0.2}px`, `-${0.5 * imageWidth}px` ],
             scale: [ 0.5, 1, 0.5 ], 
-            rotate: ['-15deg', '0deg', '13deg', '18deg', '30deg', '50deg', '70deg' ],
+            rotate: ['-15deg', '0deg', '8deg', '18deg', '30deg', '50deg', '70deg' ],
             zIndex: [ 0, 100 ]
           }, 
           { 
