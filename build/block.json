@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "title": "Uncommon About Header",
   "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "icon": "gallery",
+  "description": "About Us header block with an animated gallery where images fly around the screen",
   "supports": {
     "html": false
   },
