@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Uncommon About Header",
 	"category": "widgets",
-	"icon": "gallery",
+	"icon": "format-gallery",
 	"description": "About Us header block with an animated gallery where images fly around the screen",
 	"supports": {
 		"html": false
