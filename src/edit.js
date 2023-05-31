@@ -22,7 +22,6 @@ export default function Edit({ attributes, setAttributes }) {
           ['core/image', {}],
           ['core/image', {}],
         ]}
-        templateLock={'all'}
       />
       <TextControl
         className='uncommon-about-header-title-input'
